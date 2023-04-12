@@ -1,0 +1,39 @@
+    {% extends "base.html" %}
+
+    {% block conteudo %}
+
+    <div>
+        <!-- Background -->
+        <style>
+            body{background-image: url(../static/imagens/fundo2.png);}
+        </style>
+
+        <!-- Corpo da página contato -->
+        <h2>Entre em contato</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit praesentium sint iure. Aliquam itaque commodi laborum reprehenderit, delectus ab rerum nobis.</p>
+        <hr>
+
+        <!-- Parte do email, assunto e descrição -->
+        <div>
+            <label>Seu e-mail:</label>
+            <br>
+            <input type="email" name="e-mail" id="e-mail">
+        </div>
+
+        <div>
+            <label>Assunto:</label>
+            <br>
+            <input type="text" name="assunto" id="assunto">
+        </div>
+
+        <div>
+            <label>Descrição:</label>
+            <br>
+            <textarea row="3" style="width: 26;" name="desc" id="desc"></textarea>
+        </div>
+
+        <button type="submit">Enviar</button>
+
+    </div>
+
+    {% endblock %}
